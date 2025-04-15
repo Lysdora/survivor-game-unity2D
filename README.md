@@ -22,6 +22,8 @@ Parcourez notre collection de guides détaillés pour comprendre et implémenter
 
 ### Ennemis et Systèmes de Spawn
 - **[Système de Spawn d'Ennemis Basique](guides/basic-enemy-spawner-guide.md)** - Création d'un système simple pour faire apparaître des ennemis
+- **[Système de Spawn d'Ennemis sur les Bords de l'ecran de jeu](/guides/bordes-spawn-guide.md)** - Amelioration de notre SpawnPoint
+
 
 ### Organisation et Structure du Projet
 - **[Comprendre et Utiliser les Prefabs](guides/prefabs-guide.md)** - Maîtriser les prefabs pour une meilleure organisation et réutilisation des objets de jeu
