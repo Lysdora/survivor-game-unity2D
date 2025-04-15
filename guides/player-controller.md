@@ -1,6 +1,6 @@
 # Guide: Contrôleur de joueur dans Unity
 
-![Unity Logo](../images/player_vampire.png)
+![Player art](../images/player_vampire.png)
 
 ## Introduction
 
