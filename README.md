@@ -2,7 +2,7 @@
 
 Bienvenue dans la documentation officielle du projet "Survivor Game", un jeu de type "rogue-lite" inspiré de Vampire Survivors, développé avec Unity.
 
-![Game Banner](./images/game-banner.png)
+![Game Banner](./images/arts.png)
 
 ## Guides disponibles
 
