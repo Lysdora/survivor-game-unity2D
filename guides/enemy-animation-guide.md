@@ -1,6 +1,6 @@
 # Guide: Animation d'ennemi légère dans Unity
 
-![Unity Logo](../images/unity-logo.png)
+
 
 ## Introduction
 
@@ -115,7 +115,47 @@ Ce paramètre contrôle l'amplitude de la pulsation:
 
 ## Améliorations possibles
 
-### 1. Ajouter un décalage aléatoire pour désynchroniser les animations
+### 1. Vitesse d'animation aléatoire pour chaque ennemi
+
+Pour que chaque ennemi ait sa propre vitesse d'animation et ajouter plus de variété visuelle :
+
+```csharp
+private Vector3 originalScale;
+private float scaleFactor = 1.1f;
+private float animationSpeed;  // On ne l'initialise plus ici
+
+void Start()
+{
+    originalScale = transform.localScale;
+    
+    // Assigne une vitesse aléatoire à chaque ennemi
+    animationSpeed = Random.Range(1.5f, 3.5f);
+}
+
+void Update()
+{
+    float scale = Mathf.SmoothStep(1f, scaleFactor, Mathf.PingPong(Time.time * animationSpeed, 1f));
+    transform.localScale = originalScale * scale;
+}
+```
+
+Ce code génère aléatoirement une vitesse d'animation différente pour chaque ennemi au moment de sa création. Vous pouvez également lier cette vitesse à d'autres caractéristiques de l'ennemi :
+
+```csharp
+public float moveSpeed = 2.0f;  // Vitesse de déplacement de l'ennemi
+
+void Start()
+{
+    originalScale = transform.localScale;
+    
+    // Associe la vitesse d'animation à la vitesse de déplacement
+    animationSpeed = moveSpeed + Random.Range(-0.5f, 0.5f);
+}
+```
+
+Cette approche est particulièrement intéressante car elle crée une cohérence visuelle : les ennemis qui se déplacent rapidement pulsent également plus vite, ce qui les rend encore plus menaçants !
+
+### 2. Ajouter un décalage aléatoire pour désynchroniser les animations
 
 Pour éviter que tous vos ennemis ne pulsent en même temps, vous pouvez ajouter un décalage:
 
