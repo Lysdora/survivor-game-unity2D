@@ -9,6 +9,7 @@ Bienvenue dans la documentation officielle du projet "Survivor Game", un jeu de 
 - [Guide du contrôleur de joueur](guides/player-controller.md)
 - [Guide du contrôleur de caméra](guides/camera-controller.md)
 - [Guide du contrôleur d'ennemi](guides/enemy-controller.md)
+- [Guide de l'animation des ennemis](guides/enemy-animation-guide.md)
 
 ## À propos du projet
 
