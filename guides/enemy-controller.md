@@ -1,6 +1,6 @@
 # Guide: Contrôleur d'ennemi dans Unity
 
-![Unity Logo](../images/unity-logo.png)
+![Enemy art](../images/enemy.png)
 
 ## Introduction
 
