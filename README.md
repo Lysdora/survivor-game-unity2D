@@ -11,6 +11,7 @@ Bienvenue dans la documentation officielle du projet "Survivor Game", un jeu de 
 - [Guide du contrôleur d'ennemi](guides/enemy-controller.md)
 - [Guide de l'animation des ennemis](guides/enemy-animation-guide.md)
 - [Degats des enemies (plusieurs methodes)](/guides/combat-system-guide.md)
+- [Creation d'une mini barre de vie pour le Player](/guides/health-slider-guide.md)
 
 ## À propos du projet
 
